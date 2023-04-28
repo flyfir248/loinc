@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="{{ url_for('get_ionic_codes') }}" method="post">
+        <h2>Demographics</h2>
+        <label for="sex">Sex at Birth:</label>
+        <select id="sex" name="sex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Not specified">Not specified</option>
+        </select>
+
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age" placeholder="years or months">
+
+        <label for="height">Height (Length):</label>
+        <input type="text" id="height" name="height" placeholder="cm">
+
+        <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight" placeholder="kg">
+
+        <input type="submit" value="Get Ionic Codes">
+    </form>
+</body>
+</html>

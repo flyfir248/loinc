@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ionic Codes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Ionic Codes</h1>
+    <ul>
+        {% for code in ionic_codes %}
+            <li>{{ code }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
