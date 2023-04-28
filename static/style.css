@@ -1,66 +1,45 @@
+/* Set background color and font family for the entire page */
 body {
-  background-color: #f0f7fb;
-  color: #333333;
+background-color: #f2f2f2;
+font-family: Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #333333;
+/* Style the header */
+h1 {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
 }
 
+/* Style the list */
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+/* Style the list items */
+li {
+background-color: #fff;
+border: 1px solid #ddd;
+margin-top: 10px;
+padding: 10px;
+}
+
+/* Style the list item hover state */
+li:hover {
+background-color: #f2f2f2;
+cursor: pointer;
+}
+
+/* Style the link */
 a {
-  color: #2c82c9;
+color: #333;
+text-decoration: none;
 }
 
-.btn-primary {
-  background-color: #2c82c9;
-  border-color: #2c82c9;
-  color: #ffffff;
-}
-
-.btn-primary:hover {
-  background-color: #245e7e;
-  border-color: #245e7e;
-  color: #ffffff;
-}
-
-.form-control {
-  border-color: #c7e2f1;
-}
-
-.form-control:focus {
-  border-color: #2c82c9;
-  box-shadow: none;
-}
-
-label {
-  color: #333333;
-}
-
-.table {
-  color: #333333;
-}
-
-.table thead th {
-  background-color: #d1ecf1;
-  border-color: #c7e2f1;
-  color: #333333;
-}
-
-.table tbody + tbody {
-  border-top: 2px solid #c7e2f1;
-}
-
-.table-bordered {
-  border-color: #c7e2f1;
-}
-
-.table-bordered th,
-.table-bordered td {
-  border-color: #c7e2f1;
-}
-
-.alert-primary {
-  background-color: #d1ecf1;
-  border-color: #c7e2f1;
-  color: #333333;
+/* Style the link hover state */
+a:hover {
+text-decoration: underline;
 }
